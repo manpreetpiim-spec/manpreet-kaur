@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Thoughtful digital marketing for brands ready to grow. Meet Manpreet Kaur, a digital marketing specialist in SEO, content, social media and email."
+    >
+    <meta name="theme-color" content="#f7f4ee">
+    <title>Manpreet Kaur — Thoughtful Marketing, Meaningful Growth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    >
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f7f4ee;
+        --paper-deep: #eee9df;
+        --ink: #292a26;
+        --muted: #6d6b63;
+        --accent: #a65f4b;
+        --accent-dark: #834733;
+        --line: #ded8cd;
+        --white: #fffefa;
+        --serif: "Playfair Display", Georgia, serif;
+        --sans: "DM Sans", Arial, sans-serif;
+        --page-width: 1160px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 92px;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--sans);
+        font-size: 16px;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      .container {
+        width: min(var(--page-width), calc(100% - 48px));
+        margin-inline: auto;
+      }
+
+      .eyebrow {
+        margin: 0 0 16px;
+        color: var(--accent-dark);
+        font-size: 0.73rem;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        line-height: 1.4;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.12;
+      }
+
+      h1,
+      h2 {
+        font-family: var(--serif);
+        font-weight: 500;
+        letter-spacing: -0.035em;
+      }
+
+      h1 {
+        max-width: 640px;
+        margin-bottom: 22px;
+        font-size: clamp(3.2rem, 6.5vw, 5.5rem);
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        font-size: clamp(2.35rem, 4.5vw, 3.65rem);
+      }
+
+      h3 {
+        margin-bottom: 12px;
+        font-size: 1.12rem;
+        font-weight: 600;
+      }
+
+      .lede {
+        max-width: 570px;
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.8;
+      }
+
+      .button {
+        display: inline-flex;
+        min-height: 50px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0 22px;
+        border: 1px solid var(--accent);
+        border-radius: 999px;
+        background: var(--accent);
+        color: var(--white);
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+        border-color: var(--accent-dark);
+        background: var(--accent-dark);
+      }
+
+      .button:focus-visible,
+      .nav-links a:focus-visible,
+      .footer-links a:focus-visible,
+      .brand:focus-visible,
+      .text-link:focus-visible {
+        outline: 3px solid #c88f7c;
+        outline-offset: 4px;
+      }
+
+      .button .arrow,
+      .text-link .arrow {
+        font-size: 1.1em;
+        line-height: 1;
+      }
+
+      .site-header {
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        border-bottom: 1px solid rgb(41 42 38 / 7%);
+        background: rgb(247 244 238 / 94%);
+        backdrop-filter: blur(12px);
+      }
+
+      .nav {
+        display: flex;
+        min-height: 80px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        color: var(--ink);
+        font-family: var(--serif);
+        font-size: 1.35rem;
+        font-weight: 600;
+        letter-spacing: -0.04em;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: clamp(16px, 2.4vw, 32px);
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .nav-links a {
+        color: var(--muted);
+        font-size: 0.85rem;
+        text-decoration: none;
+        transition: color 160ms ease;
+      }
+
+      .nav-links a:hover,
+      .footer-links a:hover,
+      .text-link:hover {
+        color: var(--accent-dark);
+      }
+
+      .nav-cta {
+        min-height: 44px;
+        padding-inline: 18px;
+        font-size: 0.83rem;
+      }
+
+      .hero {
+        padding-block: clamp(68px, 9vw, 118px) clamp(82px, 11vw, 142px);
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.82fr);
+        align-items: center;
+        gap: clamp(42px, 8vw, 104px);
+      }
+
+      .hero-copy {
+        padding-block: 12px;
+      }
+
+      .hero-copy h1 em {
+        color: var(--accent);
+        font-style: normal;
+      }
+
+      .hero-copy .lede {
+        margin-bottom: 30px;
+      }
+
+      .hero-note {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 22px 0 0;
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+
+      .hero-note::before {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #8e9a78;
+        content: "";
+      }
+
+      .portrait-wrap {
+        position: relative;
+        max-width: 435px;
+        justify-self: end;
+      }
+
+      .portrait {
+        width: 100%;
+        aspect-ratio: 4 / 4.7;
+        border-radius: 46% 46% 8px 8px;
+        background: #e8dfd2;
+        object-fit: cover;
+      }
+
+      .portrait-card {
+        position: absolute;
+        right: -28px;
+        bottom: 28px;
+        max-width: 230px;
+        padding: 17px 20px;
+        border: 1px solid rgb(41 42 38 / 7%);
+        border-radius: 8px;
+        background: var(--white);
+        box-shadow: 0 12px 35px rgb(41 42 38 / 8%);
+      }
+
+      .portrait-card strong {
+        display: block;
+        margin-bottom: 3px;
+        font-family: var(--serif);
+        font-size: 1.12rem;
+        font-weight: 500;
+      }
+
+      .portrait-card span {
+        color: var(--muted);
+        font-size: 0.77rem;
+      }
+
+      .intro-strip {
+        padding-block: 29px;
+        border-block: 1px solid var(--line);
+      }
+
+      .intro-strip p {
+        max-width: 850px;
+        margin: 0 auto;
+        color: var(--muted);
+        font-family: var(--serif);
+        font-size: clamp(1.25rem, 2.3vw, 1.75rem);
+        line-height: 1.45;
+        text-align: center;
+      }
+
+      .section {
+        padding-block: clamp(82px, 11vw, 140px);
+      }
+
+      .section-heading {
+        max-width: 690px;
+        margin-bottom: 52px;
+      }
+
+      .section-heading .lede {
+        margin-bottom: 0;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .service-card {
+        min-height: 265px;
+        padding: 29px 24px 30px 0;
+      }
+
+      .service-card + .service-card {
+        padding-left: 24px;
+        border-left: 1px solid var(--line);
+      }
+
+      .service-number {
+        display: inline-block;
+        margin-bottom: 35px;
+        color: var(--accent);
+        font-family: var(--serif);
+        font-size: 1.05rem;
+      }
+
+      .service-card p,
+      .case-card p {
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .about {
+        background: var(--paper-deep);
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        align-items: start;
+        gap: clamp(44px, 10vw, 135px);
+      }
+
+      .about-aside {
+        position: sticky;
+        top: 130px;
+      }
+
+      .about-aside p:last-child {
+        max-width: 300px;
+        color: var(--muted);
+      }
+
+      .about-copy p {
+        color: #54534d;
+      }
+
+      .about-copy p + p {
+        margin-top: 18px;
+      }
+
+      .text-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        margin-top: 10px;
+        color: var(--accent-dark);
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .case-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+      }
+
+      .case-card {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: var(--white);
+      }
+
+      .case-visual {
+        display: grid;
+        min-height: 225px;
+        place-items: center;
+        padding: 28px;
+        background: #e9e1d5;
+        color: var(--accent-dark);
+        text-align: center;
+      }
+
+      .case-card:nth-child(2) .case-visual {
+        background: #e6e8df;
+        color: #59634e;
+      }
+
+      .case-visual span {
+        font-family: var(--serif);
+        font-size: clamp(1.7rem, 4vw, 2.65rem);
+        line-height: 1.2;
+      }
+
+      .case-content {
+        padding: 27px 30px 30px;
+      }
+
+      .case-type {
+        display: block;
+        margin-bottom: 11px;
+        color: var(--accent-dark);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .case-content h3 {
+        font-family: var(--serif);
+        font-size: 1.45rem;
+        font-weight: 500;
+      }
+
+      .case-placeholder {
+        margin-top: 18px !important;
+        padding-top: 14px;
+        border-top: 1px solid var(--line);
+        font-size: 0.8rem !important;
+      }
+
+      .testimonials {
+        background: #34352f;
+        color: var(--white);
+      }
+
+      .testimonials .eyebrow {
+        color: #d3a08d;
+      }
+
+      .testimonials .section-heading {
+        max-width: 620px;
+      }
+
+      .testimonials .section-heading .lede {
+        color: #d1d0c9;
+      }
+
+      .quote-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .quote-card {
+        padding: 31px;
+        border: 1px solid rgb(255 254 250 / 17%);
+        border-radius: 9px;
+        background: rgb(255 254 250 / 4%);
+      }
+
+      .quote-mark {
+        margin-bottom: 15px;
+        color: #d3a08d;
+        font-family: var(--serif);
+        font-size: 3.1rem;
+        line-height: 0.8;
+      }
+
+      .quote-card blockquote {
+        margin: 0 0 24px;
+        font-family: var(--serif);
+        font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+        line-height: 1.5;
+      }
+
+      .quote-credit {
+        margin: 0;
+        color: #d1d0c9;
+        font-size: 0.82rem;
+      }
+
+      .quote-credit strong {
+        color: var(--white);
+        font-weight: 600;
+      }
+
+      .quote-placeholder {
+        margin: 26px 0 0;
+        color: #c1c0b9;
+        font-size: 0.78rem;
+      }
+
+      .contact {
+        padding-block: clamp(84px, 12vw, 150px);
+        text-align: center;
+      }
+
+      .contact .eyebrow {
+        margin-bottom: 19px;
+      }
+
+      .contact h2 {
+        max-width: 760px;
+        margin-inline: auto;
+      }
+
+      .contact .lede {
+        max-width: 570px;
+        margin: 0 auto 29px;
+      }
+
+      .contact-email {
+        display: block;
+        margin-top: 20px;
+        color: var(--muted);
+        font-size: 0.88rem;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+      }
+
+      .site-footer {
+        padding-block: 32px;
+        border-top: 1px solid var(--line);
+      }
+
+      .footer-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 22px;
+      }
+
+      .footer-brand {
+        display: grid;
+        gap: 4px;
+      }
+
+      .footer-brand .brand {
+        font-size: 1.15rem;
+      }
+
+      .footer-brand span:last-child,
+      .copyright {
+        color: var(--muted);
+        font-size: 0.75rem;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .footer-links a {
+        color: var(--muted);
+        font-size: 0.8rem;
+        text-decoration: none;
+      }
+
+      .copyright {
+        margin: 0;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 900px) {
+        .nav {
+          flex-wrap: wrap;
+          padding-block: 13px;
+        }
+
+        .nav-links {
+          order: 3;
+          width: 100%;
+          justify-content: center;
+          gap: clamp(13px, 3.4vw, 28px);
+        }
+
+        .hero-grid {
+          grid-template-columns: 1fr 0.78fr;
+          gap: 40px;
+        }
+
+        .portrait-card {
+          right: -12px;
+        }
+
+        .services-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .service-card:nth-child(3) {
+          padding-left: 0;
+          border-left: 0;
+          border-top: 1px solid var(--line);
+        }
+
+        .service-card:nth-child(4) {
+          border-top: 1px solid var(--line);
+        }
+
+        .footer-row {
+          flex-wrap: wrap;
+        }
+
+        .copyright {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .container {
+          width: min(var(--page-width), calc(100% - 36px));
+        }
+
+        .nav {
+          gap: 12px;
+        }
+
+        .brand {
+          font-size: 1.2rem;
+        }
+
+        .nav-cta {
+          min-height: 40px;
+          padding-inline: 15px;
+        }
+
+        .nav-links {
+          justify-content: flex-start;
+          gap: 20px;
+          overflow-x: auto;
+          padding-bottom: 2px;
+          white-space: nowrap;
+        }
+
+        .nav-links a {
+          font-size: 0.8rem;
+        }
+
+        .hero {
+          padding-top: 56px;
+        }
+
+        .hero-grid {
+          grid-template-columns: 1fr;
+          gap: 38px;
+        }
+
+        .hero-copy {
+          padding: 0;
+        }
+
+        .hero-copy .lede {
+          font-size: 1rem;
+        }
+
+        .portrait-wrap {
+          width: min(82%, 360px);
+          justify-self: center;
+        }
+
+        .portrait-card {
+          right: -18px;
+          bottom: 20px;
+        }
+
+        .section-heading {
+          margin-bottom: 36px;
+        }
+
+        .services-grid,
+        .case-grid,
+        .quote-grid,
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .service-card,
+        .service-card + .service-card {
+          min-height: auto;
+          padding: 24px 0;
+          border-left: 0;
+        }
+
+        .service-card + .service-card {
+          border-top: 1px solid var(--line);
+        }
+
+        .service-number {
+          margin-bottom: 19px;
+        }
+
+        .about-grid {
+          gap: 28px;
+        }
+
+        .about-aside {
+          position: static;
+        }
+
+        .case-visual {
+          min-height: 185px;
+        }
+
+        .case-content,
+        .quote-card {
+          padding: 24px;
+        }
+
+        .footer-row {
+          align-items: flex-start;
+        }
+
+        .footer-links {
+          gap: 13px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Manpreet Kaur home">Manpreet Kaur<span aria-hidden="true">.</span></a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Case studies</a></li>
+        </ul>
+        <a class="button nav-cta" href="#contact">Let’s chat <span class="arrow" aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Digital marketing, made thoughtful</p>
+            <h1>Hello. Let’s grow your brand <em>online.</em></h1>
+            <p class="lede">
+              I’m Manpreet, a digital marketing specialist helping thoughtful businesses find their people and turn meaningful attention into steady growth.
+            </p>
+            <a class="button" href="#contact">Let’s talk about your goals <span class="arrow" aria-hidden="true">↗</span></a>
+            <p class="hero-note">Strategy first. Clear steps. Growth you can understand.</p>
+          </div>
+          <div class="portrait-wrap">
+            <img
+              class="portrait"
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=85"
+              alt="Portrait of a smiling professional in warm natural light"
+              fetchpriority="high"
+            >
+            <div class="portrait-card">
+              <strong>A little more intention.</strong>
+              <span>A lot more momentum.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="intro-strip">
+        <div class="container">
+          <p>Good marketing isn’t louder. It’s a clearer story, shared with the right people, in the right places.</p>
+        </div>
+      </div>
+
+      <section class="section container" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">How I can help</p>
+          <h2>Thoughtful strategy. Practical momentum.</h2>
+          <p class="lede">The right mix of channels depends on your goals. We’ll find the opportunities that make sense for your business—and make every next step count.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <h3>SEO &amp; content strategy</h3>
+            <p>Show up for the searches that matter with a useful content plan, stronger on-page foundations, and a voice that sounds like you.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>Paid ads &amp; Google Ads</h3>
+            <p>Reach the right people with focused campaigns, thoughtful creative, and ongoing optimisation grounded in your business goals.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>Social media growth</h3>
+            <p>Build a more consistent, engaging presence with channel strategy, content planning, and community-first ideas.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-number">04</span>
+            <h3>Email &amp; campaign analytics</h3>
+            <p>Turn one-time interest into lasting connection, then make better decisions with clear, human-friendly reporting.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container about-grid">
+          <div class="about-aside">
+            <p class="eyebrow">A little about me</p>
+            <h2>Curious by nature. Strategic by design.</h2>
+            <p>Marketing should feel like a partnership—not a pile of jargon and disconnected tactics.</p>
+          </div>
+          <div class="about-copy">
+            <p>I’m Manpreet Kaur, a digital marketing specialist who believes the best growth starts with listening. Before recommending a channel or campaign, I want to understand your business, your customers, and what success actually means to you.</p>
+            <p>From search and content to social, email, and paid campaigns, I bring the pieces together around one clear direction. You’ll know what we’re doing, why we’re doing it, and how we’ll learn from what happens next.</p>
+            <p>My approach is collaborative, considered, and focused on progress you can build on. No one-size-fits-all playbooks—just a plan shaped around your next chapter.</p>
+            <a class="text-link" href="#contact">Tell me what you’re building <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Good work starts with the right question.</h2>
+          <p class="lede">A glimpse at the kinds of challenges I help solve. Each engagement starts with your goals—not a pre-set formula.</p>
+        </div>
+        <div class="case-grid">
+          <article class="case-card">
+            <div class="case-visual"><span>Make the right<br>things easier to find.</span></div>
+            <div class="case-content">
+              <span class="case-type">Search strategy · Content</span>
+              <h3>A clearer path from search to discovery</h3>
+              <p>Bringing audience insight, search intent, and a more useful content direction together to support sustainable organic visibility.</p>
+              <p class="case-placeholder">Add a real client, challenge, approach, and verified outcome before publishing this case study.</p>
+            </div>
+          </article>
+          <article class="case-card">
+            <div class="case-visual"><span>Show up with<br>more intention.</span></div>
+            <div class="case-content">
+              <span class="case-type">Social media · Campaigns</span>
+              <h3>Turning a scattered presence into a story</h3>
+              <p>Connecting brand voice, channel planning, and campaign measurement to make every post feel part of a bigger picture.</p>
+              <p class="case-placeholder">Add a real client, challenge, approach, and verified outcome before publishing this case study.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section testimonials" id="testimonials">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Kind words</p>
+            <h2>Good work is a team effort.</h2>
+            <p class="lede">The best measure of a partnership is how it feels to work together—and what you learn along the way.</p>
+          </div>
+          <div class="quote-grid">
+            <figure class="quote-card">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <blockquote>[Add a real client quote about the strategy, collaboration, or outcome they valued.]</blockquote>
+              <figcaption class="quote-credit"><strong>[Client name]</strong> · [Business name]</figcaption>
+            </figure>
+            <figure class="quote-card">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <blockquote>[Add a second approved testimonial that reflects your process and the difference it made.]</blockquote>
+              <figcaption class="quote-credit"><strong>[Client name]</strong> · [Business name]</figcaption>
+            </figure>
+          </div>
+          <p class="quote-placeholder">Replace these placeholders with genuine, permission-approved testimonials before launch.</p>
+        </div>
+      </section>
+
+      <section class="contact container" id="contact">
+        <p class="eyebrow">Your next chapter starts here</p>
+        <h2>Have a good feeling about what’s possible?</h2>
+        <p class="lede">Tell me where you want to go. We’ll talk about what’s working, what could be better, and the right next step for your brand.</p>
+        <a class="button" href="mailto:hello@manpreetkaur.com?subject=Let%E2%80%99s%20talk%20about%20my%20marketing">Let’s have a conversation <span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="contact-email" href="mailto:hello@manpreetkaur.com">hello@manpreetkaur.com</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div class="footer-brand">
+          <a class="brand" href="#home">Manpreet Kaur<span aria-hidden="true">.</span></a>
+          <span>Thoughtful marketing. Meaningful growth.</span>
+        </div>
+        <ul class="footer-links" aria-label="Footer navigation and social links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="mailto:hello@manpreetkaur.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
+        <p class="copyright">© <span id="year">2026</span> Manpreet Kaur</p>
+      </div>
+    </footer>
+  </body>
+</html>
